@@ -16,7 +16,9 @@ export default function App() {
         console.log(res.data)
       })
       .catch(err => err)
-      .finally(() => setIsLoading(false));
+      .finally(() => setTimeout(() => {
+        setIsLoading(false)
+      }, 2000));
 
   }
 
